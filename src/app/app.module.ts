@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SmallContentComponent } from './base/small-content/small-content.component';
 import { ImageContainerComponent } from './base/image-container/image-container.component';
 import { FooterComponent } from './base/footer/footer.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './base/footer/footer.component';
     SmallContentComponent,
     ImageContainerComponent,
     FooterComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,9 +11,9 @@ export class HomeComponent implements OnInit {
   @ViewChild("row", {static:false}) private row: ElementRef<HTMLDivElement>;
   isRowInView: boolean = true;
   @ViewChild("image1", {static:false}) private image1: ElementRef<HTMLDivElement>;
-  isImage1InView: boolean = true;
+  isImage1InView: boolean = false;
   @ViewChild("image2", {static:false}) private image2: ElementRef<HTMLDivElement>;
-  isImage2InView: boolean = true;
+  isImage2InView: boolean = false;
 
   constructor() { }
 
