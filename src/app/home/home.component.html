@@ -1,10 +1,12 @@
-<div class="main-content w-100 flex flex-col items-center p-5">
-    <app-jumbotron class="m-5 w-full"></app-jumbotron>
-    <div class="m-5 w-full flex justify-between">
-        <app-small-content class="grow mr-4"></app-small-content>
-        <app-small-content class="grow mr-2 ml-2"></app-small-content>
-        <app-small-content class="grow ml-4"></app-small-content>
+<div class="main-content w-100 flex flex-col justify-center items-center p-5">
+    <div #jumbotron class="my-5">
+        <app-jumbotron class="w-full fade" [ngClass]="{'show':isJumboTronInView === true, 'hide':isJumboTronInView === false}"></app-jumbotron>
     </div>
-    <app-image-container></app-image-container>
-    <app-image-container></app-image-container>
+    <div #row1 class="w-full grid grid-cols-3 gap-1 fade my-5" [ngClass]="{'show':isRowInView === true, 'hide':isRowInView === false}">
+        <app-small-content></app-small-content>
+        <app-small-content></app-small-content>
+        <app-small-content></app-small-content>
+    </div>
+    <div #image1 class="max-w-md fade my-5" [ngClass]="{'show':isImage1InView === true, 'hide':isImage1InView === false}"><app-image-container></app-image-container></div>
+    <div #image2 class="max-w-md fade my-5" [ngClass]="{'show':isImage2InView === true, 'hide':isImage2InView === false}"><app-image-container></app-image-container></div>
 </div>
