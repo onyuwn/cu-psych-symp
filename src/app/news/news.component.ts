@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-news',
@@ -11,7 +11,7 @@ export class NewsComponent implements OnInit {
   @ViewChild("update2", {static:false}) private update2: ElementRef<HTMLDivElement>;
   update2InView: boolean = true;
   @ViewChild("update3", {static:false}) private update3: ElementRef<HTMLDivElement>;
-  update3InView: boolean = false;
+  update3InView: boolean = true;
   @ViewChild("update4", {static:false}) private update4: ElementRef<HTMLDivElement>;
   update4InView: boolean = false;
   @ViewChild("update5", {static:false}) private update5: ElementRef<HTMLDivElement>;
